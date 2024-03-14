@@ -84,6 +84,7 @@ export const limit=  async (req, res) => {
     try {
       
       const { limit, devicename,time } = req.body;
+     
       console.log("time",time)
       if (!limit) {
         return res.status(400).json({ error: 'Missing required parameter "limit"' });
@@ -305,7 +306,6 @@ export const limit=  async (req, res) => {
           signal_strength: signal_strength,
           battery_status: battery,
           timestamp: formattedTimestamp,
-          
         };
         await DataModel.create(newData);
         res.status(200).json(responseData);

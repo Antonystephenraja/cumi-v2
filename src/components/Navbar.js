@@ -19,12 +19,14 @@ const Navbar = ({device_data,Device_name,alldata_list}) => {
   const device2 = alldata_list["XY00002"];
   const device3 = alldata_list["XY00003"];
   const device4 = alldata_list["XY00004"];
+  const device5 = alldata_list["XY00005"];
 
 
   const device1_data = device1 ? device1.thickness : 'N/A';
   const device2_data = device2 ? device2.thickness : 'N/A';
   const device3_data = device3 ? device3.thickness : 'N/A';
   const device4_data = device4 ? device4.thickness : 'N/A';
+  const device5_data = device5 ? device5.thickness : 'N/A';
 
   
 let epoch_time_lastUpdated;

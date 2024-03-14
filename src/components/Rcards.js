@@ -161,12 +161,13 @@ const Device_error =()=>{
       Device_error()
     } else {
       try{
+        const d5= "XY00005";
         const response = await fetch('https://cumi.xyma.live/backend/limit',{
           method:'POST',
           headers:{
             'Content-Type':'application/json',
           },
-          body: JSON.stringify({limit:inputValue, devicename:deviceName,time:dropdowndata}),
+          body: JSON.stringify({limit:inputValue, devicename:d5,time:dropdowndata}),
         });
         if(response.ok){
           inputRef.current.value = ""
@@ -237,7 +238,7 @@ const Device_error =()=>{
           </div>
           <div className="text-center flex-grow"> {/* Center content vertically */}
             <div className="text-2xl font-medium text-gray-600">
-              <p className="text-2xl font-bold card_size text-white mt-1">{finaly_thickness === true?"⚠️ OverLimit":parseInt(thickness) === 0 ? "⚠️ ER01" :parseInt(thickness) === 999 ?"⚠️ ER02" : thickness_int + "%"}</p>
+              <p className="text-2xl font-bold card_size text-white mt-1">{finaly_thickness === true?"OverLimit":parseInt(thickness) === 0 ? "⚠️ ER01" :parseInt(thickness) === 999 ?"⚠️ ER02" : thickness_int + "%"}</p>
               <p className="mt-1 text-lg text-white">Thickness</p>
             </div>
           </div>

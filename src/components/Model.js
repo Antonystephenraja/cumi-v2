@@ -147,11 +147,11 @@ const Model = ({alldata_list,device_name}) => {
 
   const data1 = [
     { id: 'ID', thickness: 'THICKNESS'},
-    { id: 'XY00001:', thickness: `${rounded_percentage_device1 >100 ?'⚠️' :parseFloat(device1_data) > device1_thickness ?"⚠️" : rounded_percentage_device1 + '%'}`},
-    { id: 'XY00002:', thickness: `${rounded_percentage_device2 > 100 ? '⚠️':parseFloat(device2_data) > device2_thickness ?"⚠️" : rounded_percentage_device2 + '%'}`},
-    { id: 'XY00003:', thickness: `${rounded_percentage_device3 > 100 ? '⚠️':parseFloat(device3_data) > device3_thickness ?"⚠️" : rounded_percentage_device3 + ' %'}` },
-    { id: 'XY00004:', thickness: `${rounded_percentage_device4 > 100 ? '⚠️':parseFloat(device4_data) > device4_thickness ?"⚠️" : rounded_percentage_device4 + '%'}` },
-    { id: 'XY00005:', thickness: `${rounded_percentage_device5 > 100 ? '⚠️':parseFloat(device5_data) > device5_thickness ?"⚠️" : rounded_percentage_device5 + '%'}`},
+    { id: 'XY00001:', thickness: `${rounded_percentage_device1 >100 ?'⚠️' : rounded_percentage_device1 + '%'}`},
+    { id: 'XY00002:', thickness: `${rounded_percentage_device2 > 100 ? '⚠️': rounded_percentage_device2 + '%'}`},
+    { id: 'XY00003:', thickness: `${rounded_percentage_device3 > 100 ? '⚠️': rounded_percentage_device3 + ' %'}` },
+    { id: 'XY00004:', thickness: `${rounded_percentage_device4 > 100 ? '⚠️': rounded_percentage_device4 + '%'}` },
+    { id: 'XY00005:', thickness: `${rounded_percentage_device5 > 100 ? '⚠️' : rounded_percentage_device5 + '%'}`},
     { id: 'XY00006:', thickness: 'N/A'},
     { id: 'XY00007:', thickness: 'N/A'},
     { id: 'XY00008:', thickness: 'N/A'},
